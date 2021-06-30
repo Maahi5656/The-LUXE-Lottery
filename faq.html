@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Frequently Asked Questions - The Luxe Lottery</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b23c7cc76f.js" crossorigin="anonymous"></script>
+
+
+  <link href="asset/css/silk-serif.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="asset/css/style.css">
+  <style>
+
+  button{
+    position: relative;
+    display: flex !important;
+    align-items: center !important;
+    padding-right: 19px !important;
+  }
+
+  .accordion {
+  background-color: transparent !important;
+  color: #fff !important;
+  cursor: pointer;
+  margin: 39px 0 !important;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  margin-left: 15px;
+  display: none;
+  background-color: transparent !important;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.panel p{
+  margin: 0;
+}
+
+.panel span{
+  padding: 0 10px;
+  font-size: 35px;
+  display: inline-block;
+}
+
+button.accordion::after {
+    content: '+';
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    left: 5px;
+  /*  top: 7px; */
+}
+
+ button.accordion.active::after {
+   content: '-';
+   font-size: 22px;
+   font-weight: bold;
+   position: absolute;
+    left: 5px;
+  /* top: 20px; */
+}
+
+.accordion-button{
+  border-bottom: 1px solid #fff;
+}
+
+button.accordion span{
+  padding: 0 10px;
+  font-size: 35px;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+</style>
+</head>
+<body>
+  <header class="second-header">
+      <div class="header-img">
+          <img src="asset/img/luxe-logo-1.png" alt="">
+      </div>
+      <div class="main-navbar pt-0">
+          <div class="main-nav-content">
+              <nav>
+                  <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Luxe</a></li>
+                    <li><a href="">Join Now</a></li>
+                    <li><a href="">Current Live Draw</a></li>
+                    <li><a href="">previous Winners</a></li>
+                    <li><a href="">faq</a></li>
+                    <li><a href="">contact luxe</a></li>
+                    <li><button id="memberLoginButton">Member Login</button></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+  </header>
+  <section class="banner-section">
+      <div class="banner-section-inner">
+          <div class="banner-section-content">
+              <img src="asset/img/banner-10.jpg" alt="" class="w-100">
+          </div>
+      </div>
+  </section>
+  <section class="priceDiv join-now">
+      <div class="priceDiv-inner">
+            <div class="container">
+                <div class="row pl-4">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="priceDiv-content firstDiv joinNowDiv  mt-5">
+                          <h1>Frequently Asked Questions</h1>
+                          <div class="button-div">
+                              <div class="accordion-button">
+                                    <button class="accordion"><span>Q</span><div>How many giveaways will The Luxe Lottery offer each month? </div></button>
+                                    <div class="panel">
+                                        <p class="d-flex"><span>A</span> There will be 1 lottery per month.</p>
+                                    </div>
+                              </div>
+
+                            <div class="accordion-button">
+                                  <button class="accordion"><span>Q</span> <div> If I have a Platinum Membership, do I have 15 entries per month or per draw? </div></button>
+                                  <div class="panel">
+                                      <p class="d-flex"><span>A</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div>
+                            </div>
+                            <div class="accordion-button">
+                                  <button class="accordion"><span>Q</span> <div> If I am a winner, how do I claim my giveaway? </div></button>
+                                  <div class="panel">
+                                      <p class="d-flex"><span>A</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div>
+                            </div>
+                            <div class="accordion-button">
+                                  <button class="accordion"><span>Q</span> <div> As a member, how am I notified of the winner of each giveaway? </div></button>
+                                  <div class="panel">
+                                      <p class="d-flex"><span>A</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div>
+                            </div>
+                            <div class="accordion-button">
+                                  <button class="accordion"><span>Q</span> <div> Is the membership a lock in contract or on a month by month basis?Is there a membership cancellation fee? </div></button>
+                                  <div class="panel">
+                                      <p class="d-flex"><span>A</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div>
+                            </div>
+                            <div class="accordion-button">
+                                  <button class="accordion"><span>Q</span> <div> Do I have better odds of winning if I become a member? </div></button>
+                                  <div class="panel">
+                                      <p class="d-flex"><span>A</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div>
+                            </div>
+                            <div class="accordion-button">
+                                  <button class="accordion"><span>Q</span> <div> As a member, how can I claim my rewards? </div></button>
+                                  <div class="panel">
+                                      <p class="d-flex"><span>A</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div>
+                            </div>
+                            <div class="accordion-button">
+                                  <button class="accordion"><span>Q</span> <div> What are the benefits of becoming a member as opposed to purchasing a single entry? </div></button>
+                                  <div class="panel">
+                                      <p class="d-flex"><span>A</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="d-flex mt-5">
+                              <button type="button" class="mb-0 mr-2" id="purchase-ticket-button">Purchase A Ticket</button>
+                              <button type="button" class="mb-0 ml-2" id="vip-button">become a vip</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="priceDiv-content">
+                           <div class="right-circle-div">
+                               <img src="asset/img/circle.png" alt="">
+                               <div class="circle-first-div">
+                                   <h2>Next Draw</h2>
+                               </div>
+                              <div class="circle-second-div">
+
+                              </div>
+                              <div class="circle-third-div">
+                                  <button id="join-button">Join Now</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="priceDiv-content prize-winner-div" style="bottom: 100px !important;">
+                          <div class="prize-winner-content">
+                              <span>1st prize winner</span>
+                              <p>893075</p>
+                          </div>
+                          <div class="prize-winner-content">
+                               <span>2nd prize winner</span>
+                               <p>603853</p>
+                          </div>
+                          <div class="prize-winner-content">
+                               <span>3rd prize winner</span>
+                              <p>490243</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-12">
+                       <img src="" alt="">
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="joinNowDiv join-title">
+                <h3>If you love life,</h3>
+                <h3 style="margin-left: 100px;">join The Luxe Life</h3>
+            </div> -->
+        </div>
+  </section>
+  <section class="priceGiveAway">
+     <div class="firstPrizeGiveAway">
+       <div class="prize-giveaway-inner">
+         <div class="prize-giveaway-content first-prize">
+              <small>Your Chance To Win</small>
+              <h2>1st Prize Giveaway</h2>
+              <p>The chance to win a $50K experience with one of the most iconic fashion brands in the world from Louis Vuitton, Gucci, Chanel and many more. Immerse yourself with the brand and their collections in your exclusive shopping experience and walk away with unique pieces of your choice that you can truly treasure forever. With our help we can make this dream become a reality. Don't miss out on this opportunity to WIN The Luxe life and change not only your life but those in need through our charitable foundation.</p>
+         </div>
+       </div>
+     </div>
+     <div class="secondPrizeGiveAway">
+       <div class="prize-giveaway-inner">
+         <div class="prize-giveaway-content second-prize">
+              <h2>2nd Prize</h2>
+              <p>$3500 experience with one of the most iconic fashion brands in the world from Louis Vuitton, Gucci, Chanel and many more.</p>
+         </div>
+        </div>
+      </div>
+      <div class="thirdPrizeGiveAway">
+        <div class="prize-giveaway-inner">
+          <div class="prize-giveaway-content third-prize">
+               <h2>3rd Prize</h2>
+               <p>$1500 experience with one of the most iconic fashion brands in the world from Louis Vuitton, Gucci, Chanel and many more.</p>
+          </div>
+         </div>
+       </div>
+  </section>
+  <section class="modern-section">
+      <div class="modern-section-inner">
+          <div class="modern-section-content join-part p-0">
+              <h2 id="TheLuxLife" class="m-0">The Luxe Life</h2>
+          </div>
+      </div>
+  </section>
+  <footer>
+      <div class="footer-section">
+          <div class="footer-section-inner">
+              <div class="footer-section-content text-center">
+                  <i class="fas fa-arrow-up"></i>
+                  <small class="scroll-top-text">Back To Top</small>
+              </div>
+              <div class="footer-section-content text-center">
+                  <img src="asset/img/luxe-logo.png" alt="">
+              </div>
+              <div class="footer-section-content text-center">
+                  <div class="footer-third-section">
+                    <div class="footer-list-section">
+                        <ul>
+                          <li><a href="">What Is The Luxe Lottery?</a></li>
+                          <li><a href="">Join Now</a></li>
+                          <li><a href="">Current Live Draw</a></li>
+                          <li><a href="">Previous Winners</a></li>
+                          <li><a href="">FAQS</a></li>
+                          <li><a href="">Members Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-address-section">
+                        <ul>
+                          <li><a href="">Level 27, 101 collins   </a></li>
+                          <li><a href="">St Melbourne VIC 3004</a></li>
+                          <li><a href="">Contact Luxe</a></li>
+                          <li><a href=""><img src="asset/img/ig.png" alt="" class="instagram-image  mt-2 mb-3"></a></li>
+                          <li><a href="">View Our Terms And Conditions</a></li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+              <div class="footer-section-content text-center">
+                 <div class="copyright-section">
+                    <p>Copyright The Luxe Lottery 2021 • ABN 52 648 554 072</p>
+                 </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+</body>
+</html>

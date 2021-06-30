@@ -1,0 +1,831 @@
+/* @import url(//db.onlinewebfonts.com/c/4de2b5d069a40f0ff08c4e88cda48a7a?family=Silk+Serif); */
+/* @font-face {font-family: "Silk Serif"; src: url("//db.onlinewebfonts.com/t/4de2b5d069a40f0ff08c4e88cda48a7a.eot"); src: url("//db.onlinewebfonts.com/t/4de2b5d069a40f0ff08c4e88cda48a7a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4de2b5d069a40f0ff08c4e88cda48a7a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4de2b5d069a40f0ff08c4e88cda48a7a.woff") format("woff"), url("//db.onlinewebfonts.com/t/4de2b5d069a40f0ff08c4e88cda48a7a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4de2b5d069a40f0ff08c4e88cda48a7a.svg#Silk Serif") format("svg"); } */
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+   width: 100%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   color: #221F20;
+}
+
+body {
+   box-sizing: border-box;
+   font-family: Sweet Sans Pro;
+   font-family: Silk Serif;
+   font-family: Poppins;
+}
+
+img{
+   max-width: 100%;
+}
+
+header{
+  position: relative;
+  /* background-image: url('../img/airport.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+section, footer{
+    overflow: hidden;
+}
+
+header .topDiv{
+  position: relative;
+  padding-top: 75px;
+  text-align: center;
+  width: 100%;
+  height: 908px;
+  background-image: url('../img/airport.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+header .main-nav{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #FCFAF9;
+  padding: 42px 0;
+  z-index: 999;
+  opacity: 86%;
+}
+
+header .main-nav nav{
+  text-align: center;
+}
+
+header .main-nav>.main-nav-content>nav li{
+  display: inline-block;
+  padding: 0 17px;
+}
+
+header .main-nav>.main-nav-content>nav li a{
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 19px;
+  letter-spacing: 0.14px;
+  color: #221F20;
+}
+
+button#memberLoginButton{
+  background: #D6D0CB;
+  border: 1px solid #000;
+  width: 177px;
+  height: 47px;
+}
+
+.priceDiv{
+  background: #161515;
+  color: #fff;
+  padding-top: 132px;
+  padding-bottom: 110px;
+}
+
+.priceDiv .priceDiv-content small{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.priceDiv .priceDiv-content h1{
+  font-size: 58px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 50px;
+  letter-spacing: -0.025px;
+  color: #C4C4C4;
+  margin-bottom: 45px;
+  margin-top: 0;
+}
+
+.priceDiv .priceDiv-content p{
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 26px;
+  letter-spacing: 2.8px;
+  margin-bottom: 40px;
+}
+
+.priceDiv-content .right-circle-div .circle-first-div h2{
+  margin: 0;
+  font-size: 100px;
+  line-height: 60px;
+  font-weight: 400;
+  letter-spacing: -2.5px;
+  text-align: left;
+  color: #d9d7d6;
+}
+
+.priceDiv-content.firstDiv{
+  margin-top: 165px;
+}
+
+button#purchase-ticket-button{
+  width: 247px;
+  display: inline-block !important;
+  font-size: 14px;
+  font-weight: 400;
+  /* padding: 20px 32px; */
+  height: 47px;
+  text-transform: uppercase;
+  color: #000;
+  background: #fcfaf9;
+  border: none;
+  outline: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+button#vip-button{
+  width: 247px;
+  height: 47px;
+  text-transform: uppercase;
+  color: #b4b2b1;
+  background: transparent;
+  border: 1px solid #b4b2b1;
+  outline: none;
+  display: inline-block !important;
+}
+
+.right-circle-div{
+  position: relative;
+  height: 520px;
+  z-index: 90;
+}
+
+.right-circle-div img{
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+}
+
+.right-circle-div .circle-first-div{
+  position: absolute;
+  top: 60px;
+  width: 70%;
+  left: 27%;
+}
+
+.right-circle-div .circle-first-div h2{
+    margin: 0;
+    font-size: 100px;
+    line-height: 60px;
+    font-weight: 400;
+    letter-spacing: -2.5px;
+    text-align: left;
+    color: #d9d7d6;
+}
+
+.right-circle-div .circle-third-div{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-65%);
+}
+
+button#join-button{
+  width: 160px;
+  height: 47px;
+  text-transform: uppercase;
+  color: #000;
+  background: #d6d0cb;
+  border: 2px solid #3a3938;
+  outline: none;
+}
+
+.prize-winner-div{
+    width: 407px;
+    background: #332f30;
+    padding: 0 35px;
+    padding-top: 70px;
+    /* display: flex; */
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+    left: 11%;
+    z-index: 8;
+}
+
+.prize-winner-div .prize-winner-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 1px solid #000;
+}
+
+.prize-winner-div .prize-winner-content:last-child{
+  border-bottom: none;
+}
+
+.prize-winner-div .prize-winner-content span{
+  display: inline-block;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  color: #FCFAF9;
+}
+
+.prize-winner-div .prize-winner-content p{
+  margin: 0;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.06px;
+}
+
+.priceGiveAway{
+  position: relative;
+  background-image: url('../img/louis-vuitton.jpg');
+  background-size: cover;
+  background-position: tops center;
+  padding-top: 92px;
+  padding-bottom: 80px;
+}
+
+.prize-giveaway-content{
+  max-width: 756px;
+  width: 100%;
+  padding-left: 224px;
+  padding-top: 56px;
+  padding-right: 63px;
+  padding-bottom: 32px;
+}
+
+.prize-giveaway-content small{
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+
+.prize-giveaway-content h2{
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.025px;
+  color: #221F20;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.prize-giveaway-content p{
+  margin-bottom: 32px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.01px;
+}
+
+.prize-giveaway-content.first-prize{
+   background: #FCFAF9F2;
+   opacity: 95%;
+}
+
+.prize-giveaway-content.second-prize{
+   background: #E9E4E0;
+   opacity: 95%;
+}
+
+.prize-giveaway-content.third-prize{
+   background: #D6D0CBF2;
+   opacity: 95%;
+}
+
+.prizeDetails{
+  background: #161515;
+  color: #fff;
+  padding-top: 127px;
+  /* padding-bottom: 1px;
+  min-height: 818px; */
+}
+
+.prizeDetails .prize-details-content p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  margin-bottom: 41px;
+}
+
+.prizeDetails .prize-details-content h5{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  margin-bottom: 33px;
+  text-transform: uppercase;
+}
+
+.prize-text{
+  margin-bottom: 85px;
+}
+
+#TheLuxLife{
+  font-size: 250px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #FCFAF9;
+  opacity: 20%;
+  letter-spacing: -0.025px;
+  padding-left: 34px;
+  height: 50px;
+  display: inline-block;
+}
+
+.follow-us-section{
+  padding-top: 154px;
+  padding-bottom: 154px;
+}
+
+.follow-us-section .instagram-img-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow-us-section .instagram-img-div img{
+  max-width: 310px;
+  width: 100%;
+}
+
+.follow-us-section .follow-section-content{
+  margin-left: 224px;
+}
+
+.follow-section-content p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 17px;
+}
+
+h2.section-title{
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.025px;
+  margin-bottom: 28px;
+}
+
+footer{
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 32px;
+  background-image: url('../img/footer-image.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .footer-section .footer-section-content:first-child{
+  margin-bottom: 147px;
+}
+
+footer .footer-section .footer-section-content:nth-child(2){
+  margin-bottom: 138px;
+}
+
+.footer-section-content i{
+  display: inline-block;
+  background: #77685d;
+  padding: 5px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.footer-section .footer-section-content small.scroll-top-text{
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.10px;
+  text-transform: uppercase;
+}
+
+.footer-section .footer-section-content .footer-third-section{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section-content .footer-third-section ul{
+  margin-bottom: 30px;
+}
+
+.footer-section-content .footer-third-section ul li{
+  list-style-type: none;
+}
+
+.footer-section-content .footer-third-section ul li a{
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.16px;
+}    /* margin-top: 10px; */
+    /* margin-bottom: 15px*/
+.footer-section-content .copyright-section{
+  margin-top: 40px;
+}
+
+.footer-section-content .copyright-section p{
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.01;
+  color: #FCFAF9;
+}
+
+/*Second Page */
+header.second-header{
+  min-height: auto;
+  background: #FCFAF9;
+  padding-top: 75px;
+  padding-bottom: 16px;
+}
+
+header.second-header .main-navbar{
+  width: 100%;
+  /* background: #FCFAF9; */
+  /* padding: 42px 0; */
+  /* opacity: 86%; */
+
+}
+
+header.second-header .header-img{
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+header.second-header .main-navbar>.main-nav-content> nav{
+  text-align: center;
+}
+
+header.second-header .main-navbar>.main-nav-content> nav li{
+  display: inline-block;
+  padding: 0 17px;
+}
+
+header.second-header .main-navbar>.main-nav-content> nav li a{
+  display: inline-block;
+  color: #221F20;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 19px;
+  letter-spacing: 0.14px;
+}
+
+/* .banner-section .banner-section-content img{
+  width: 100%;
+} */
+
+.give-back-section{
+  padding: 97px 0;
+  background-image: url('../img/banner-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.give-back-section .give-back-content{
+  max-width: 756px;
+  width: 100%;
+  background: #FCFAF9;
+  opacity: 95%;
+  padding-left: 224px;
+  padding-top: 70px;
+  padding-bottom: 77px;
+  padding-right: 80px;
+}
+
+.give-back-section .give-back-content h2{
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.025px;
+  margin-bottom: 40px;
+}
+
+.give-back-section .give-back-content p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.01px;
+  margin: 0;
+}
+
+.modern-section{
+  background: #FCFAF9;
+}
+
+.modern-section .modern-section-content{
+  padding-top: 139px;
+  padding-left: 224px;
+  padding-bottom: 54px;
+}
+
+.modern-section .modern-section-content h2{
+  margin-bottom: 44px;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.025px;
+}
+
+.modern-section .modern-section-content .modern-details-section{
+  max-width: 502px;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.modern-section .modern-section-content .modern-details-section p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 1.6px;
+}
+
+.modern-section .modern-section-content .modern-details-section h3{
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.modern-section-content h2#TheLuxLife{
+  color: #221F20;
+}
+
+.joinNowDiv .button-div button{
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 32px;
+  height: 47px;
+  text-transform: uppercase;
+  color: #000;
+  background: #fcfaf9;
+  border: none;
+  outline: none;
+    /* margin-bottom: 15px; */
+}
+
+.joinNowDiv .button-div .text-div{
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid #FCFAF9;
+  padding: 28px 58px 31px 29px;
+  color: #FCFAF9;
+  margin-bottom: 48px;
+}
+
+.joinNowDiv .button-div .text-div p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.01px;
+  margin: 0;
+
+}
+
+.joinNowDiv .button-div .text-div:last-child{
+  margin-bottom: 0;
+}
+
+.joinNowDiv.join-title{
+  margin-top: 199px;
+}
+
+.joinNowDiv.join-title h3{
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 90px;
+  letter-spacing: -0.025px;
+  padding-left: 570px;
+  color: #FCFAF9;
+  opacity: 20%;
+}
+
+.join-part{
+  padding-top: 214px !important;
+}
+
+.prizeDetails.signupDiv{
+  padding-top: 160px !important;
+  position: relative;
+  height: 1450px;
+}
+
+.section-bottom-text{
+  position: absolute;
+  bottom: 0px;
+}
+
+.platinum-membership-content.platinum-top-div{
+  background: #FCFAF9;
+  color: #000;
+  padding: 13px 0;
+  text-align: center;
+}
+
+.platinum-membership-content.platinum-top-div h3{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+.platinum-membership-content.platinum-bottom-div{
+  border: 1px solid #FCFAF9;
+  padding: 29px 23px 23px 29px;
+}
+
+.platinum-membership-content.platinum-bottom-div p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 2.8px;
+  margin-bottom: 20px;
+}
+
+.platinumForm{
+  margin-top: 55px !important;
+  /* margin-bottom: 140px; */
+}
+
+.platinumForm input[type="text"], input[type="password"], input[type="email"], select{
+  display: inline-block;
+  width: 100%;
+  height: 41px;
+  padding: 0 22px;
+  text-transform: uppercase;
+  background: #332F30;
+  color: #838283;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.10px;
+  border: none;
+  outline: none;
+}
+
+.platinumForm textarea{
+  display: inline-block;
+  width: 100%;
+  padding: 10px 22px;
+  text-transform: uppercase;
+  background: #332F30;
+  color: #838283;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.10px;
+  border: none;
+  outline: none;
+}
+
+.platinumForm span{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.platinumForm input[type="submit"]{
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 106px;
+  height: 47px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  border: none;
+}
+
+input.referal-code{
+  width: 100%;
+  max-width: 41px !important;
+  padding: 3px !important;
+  text-align: center;
+}
+
+.payment-group{
+  margin-top: 75px;
+}
+
+.payment-group h2{
+  color: #929292;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.payment-group img{
+  margin-right: 18px;
+}
+
+.payment-group img:last-child{
+  margin-right: 0;
+}
+
+.platinum-vip-div a{
+  display: inline-block;
+  text-align: center;
+  color: #FCFAF9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 1.5px;
+}
+
+.priceDiv.join-now.current-live{
+  position: relative;
+}
+
+.joinNowDiv.join-title.current-live{
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+}
+
+.priceDiv-content.firstDiv .contact-form-content p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  color: #FCFAF9;
+  margin-bottom: 42px;
+}
+
+a#forgot-password{
+  font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    color: #929292;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+.draw-winner-section .draw-winner-content .draw-winner-text, .draw-winner-section .draw-winner-content .draw-winner-image{
+  width: 50vw;
+}
+
+.draw-winner-section .draw-winner-content .draw-winner-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .modern-section-content.join-part.previous-winner-page{
+  background: #161515;
+} */
