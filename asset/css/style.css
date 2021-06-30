@@ -10,7 +10,7 @@
 
 html{
    width: 100%;
-   overflow-x: hidden;
+   overflow-x: scroll;
    scroll-behavior: smooth;
    color: #221F20;
 }
@@ -81,11 +81,19 @@ header .main-nav>.main-nav-content>nav li a{
   color: #221F20;
 }
 
+header.sticky{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
 button#memberLoginButton{
   background: #D6D0CB;
   border: 1px solid #000;
   width: 177px;
   height: 47px;
+  display: inline-block;
+  color: #221F20 !important;
 }
 
 .priceDiv{
@@ -222,7 +230,7 @@ button#join-button{
     /* display: flex; */
     text-align: center;
     position: relative;
-    bottom: 10%;
+    bottom: 80px;
     left: 11%;
     z-index: 8;
 }
@@ -349,8 +357,8 @@ button#join-button{
   margin-bottom: 85px;
 }
 
-#TheLuxLife{
-  font-size: 250px;
+h2.TheLuxLife{
+  font-size: 250px !important;
   font-weight: 300;
   line-height: 50px;
   color: #FCFAF9;
@@ -369,6 +377,8 @@ button#join-button{
 .follow-us-section .instagram-img-div{
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .follow-us-section .instagram-img-div img{
@@ -510,6 +520,11 @@ header.second-header .main-navbar>.main-nav-content> nav li a{
   letter-spacing: 0.14px;
 }
 
+header.second-header .main-navbar>.main-nav-content> nav li a:hover{
+  border: 1px solid #221F20;
+  color: #221F20;
+}
+
 /* .banner-section .banner-section-content img{
   width: 100%;
 } */
@@ -588,7 +603,7 @@ header.second-header .main-navbar>.main-nav-content> nav li a{
   text-transform: uppercase;
 }
 
-.modern-section-content h2#TheLuxLife{
+.modern-section-content h2.TheLuxLife{
   color: #221F20;
 }
 
@@ -807,13 +822,13 @@ input.referal-code{
 
 a#forgot-password{
   font-size: 15px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 1.5px;
-    color: #929292;
-    text-transform: uppercase;
-    text-decoration: underline;
-    margin-bottom: 0;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  color: #929292;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 0;
 }
 
 .draw-winner-section .draw-winner-content .draw-winner-text, .draw-winner-section .draw-winner-content .draw-winner-image{
@@ -825,6 +840,372 @@ a#forgot-password{
   justify-content: center;
   align-items: center;
 }
+
+.lotteryDescription{
+  margin-bottom: 85px;
+}
+
+/*FAQ*/
+.faqDiv  button{
+    position: relative;
+    display: flex !important;
+    align-items: center !important;
+    padding-right: 19px !important;
+  }
+
+.faqDiv  .accordion {
+  background-color: transparent !important;
+  color: #fff !important;
+  cursor: pointer;
+  margin: 39px 0 !important;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.faqDiv .active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.faqDiv .panel {
+  padding: 0 18px;
+  margin-left: 15px;
+  display: none;
+  background-color: transparent !important;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.faqDiv .panel p{
+  margin: 0;
+}
+
+.faqDiv .panel span{
+  padding: 0 10px;
+  font-size: 35px;
+  display: inline-block;
+}
+
+.faqDiv button.accordion::after {
+    content: '+';
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    left: 5px;
+  /*  top: 7px; */
+}
+
+.faqDiv  button.accordion.active::after {
+   content: '-';
+   font-size: 22px;
+   font-weight: bold;
+   position: absolute;
+    left: 5px;
+  /* top: 20px; */
+}
+
+.faqDiv .accordion-button{
+  border-bottom: 1px solid #fff;
+}
+
+.faqDiv button.accordion span{
+  padding: 0 10px;
+  font-size: 35px;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 991.5px){
+  header.second-header{
+     padding-top: 0;
+  }
+
+  .navbarLogo{
+    display: block !important;
+  }
+
+  .headerLogo{
+    display: none;
+  }
+
+  .right-circle-div .circle-third-div{
+      transform: translateX(-100%);
+  }
+
+  .right-circle-div .circle-first-div{
+    width: 60%;
+    left: 24%;
+  }
+
+  .prize-winner-div{
+    left: 8%;
+  }
+
+  .priceDiv-content{
+    /* margin-top: 100px; */
+  }
+
+  .secondColumn{
+    margin-top: 100px;
+  }
+
+  .follow-us-section .follow-section-content{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .follow-us-section .instagram-img-div{
+    justify-content: center;
+  }
+
+  .follow-us-section .instagram-img-div img{
+    max-width: 245px;
+    width: 100%;
+  }
+
+  .joinNowDiv.join-title.current-live{
+    position: relative;
+  }
+
+  .priceDivRow{
+    padding-left: 0 !important;
+  }
+
+  .joinNowDiv.join-title h3{
+    padding-left: 0 !important;
+  }
+
+  .payment-img-div img{
+    max-width: 135px;
+  }
+
+  span.ask-for-referral{
+    max-width: 150px;
+    width: 100%;
+  }
+
+  header.second-header .main-navbar>.main-nav-content> nav li{
+    border-top: 1px solid #221F20;
+    padding: 5px 0;
+  }
+
+  header.second-header .main-navbar>.main-nav-content> nav li:last-child{
+    border-bottom: 1px solid #221F20;
+  }
+
+}
+
+@media only screen and (min-width: 768.5px) and (max-width: 991.5px){
+  h2.TheLuxLife{
+    font-size: 125px !important;
+  }
+
+  .joinNowDiv.join-title h3{
+    font-size: 80px;
+  }
+}
+
+@media only screen and (min-width: 574.5px) and (max-width: 768.5px){
+  .right-circle-div .circle-third-div {
+    transform: translateX(-60%) !important;
+  }
+
+  .joinNowDiv.join-title h3{
+    font-size: 80px;
+  }
+
+  h2.TheLuxLife{
+    font-size: 90px !important;
+  }
+
+  .give-back-section .give-back-content{
+    padding-left: 50px;
+  }
+
+  .modern-section .modern-section-content{
+    padding-left: 100px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 574.5px){
+  h2.TheLuxLife{
+    font-size: 75px !important;
+  }
+
+  .joinNowDiv.join-title h3{
+    font-size: 80px;
+    line-height: 1.2;
+  }
+
+  .right-circle-div .circle-third-div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-50%) !important;
+    bottom: 120px;
+  }
+
+  .right-circle-div img{
+    /* height: auto; */
+  }
+
+  .give-back-section .give-back-content{
+    max-width: 420px;
+    padding-left: 20px;
+  }
+
+  .modern-section .modern-section-content{
+    padding-left: 80px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480.5px){
+  h2.TheLuxLife{
+    font-size: 55px !important;
+  }
+
+  .joinNowDiv.join-title h3{
+    font-size: 45px;
+    line-height: 1.2;
+  }
+
+  .right-circle-div img{
+    /* height: auto; */
+  }
+
+  .right-circle-div .circle-third-div{
+    transform: translateX(-50%);
+  }
+
+  .give-back-section .give-back-content{
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .give-back-section .give-back-content h2{
+    font-size: 40px;
+  }
+
+  .modern-section .modern-section-content{
+    padding-left: 50px;
+  }
+
+  .join-part{
+    padding-top: 120px !important;
+  }
+
+  .priceDiv{
+    padding-top: 60px;
+  }
+
+  .prizeDetails.signupDiv{
+    padding-top: 60px !important;
+  }
+
+  input.referal-code{
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  span.ask-for-referral{
+    max-width: 120px;
+    width: 100%;
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  .platinumForm input[type="submit"]{
+    padding: 0 60px !important;
+  }
+
+  a#forgot-password{
+    font-size: 13px;
+  }
+
+}
+
+@media only screen and (max-width: 575px){
+  .prize-giveaway-content{
+    padding-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 535px){
+  .priceDiv-content.prize-winner-div{
+      /* bottom: 130px !important; */
+      left: 5%;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480.5px){
+
+  .priceDiv-content .right-circle-div .circle-first-div h2{
+    font-size: 75px;
+  }
+
+  .priceDiv-content.prize-winner-div{
+    left: 0;
+  }
+
+  .priceDiv .priceDiv-content h1{
+    font-size: 40px;
+  }
+
+  .modern-section .modern-section-content h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  button#purchase-ticket-button, button#vip-button{
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .prize-winner-div{
+    width: 100%;
+    padding: 0 10px;
+    padding-top: 40px;
+  }
+
+  .follow-us-section .instagram-img-div img{
+    max-width: 85px;
+  }
+
+  h2.section-title{
+    font-size: 40px;
+  }
+
+  .follow-us-section{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .prize-giveaway-content h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .draw-winner-section .draw-winner-content .draw-winner-text h2{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .draw-winner-section .draw-winner-content .draw-winner-text p{
+    font-size: 13px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+}
+
 
 /* .modern-section-content.join-part.previous-winner-page{
   background: #161515;

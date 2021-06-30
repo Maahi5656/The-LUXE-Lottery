@@ -25,103 +25,36 @@
   <link href="asset/css/silk-serif.css" rel="stylesheet" type="text/css"/>
 
   <link rel="stylesheet" href="asset/css/style.css">
-  <style>
-
-  button{
-    position: relative;
-    display: flex !important;
-    align-items: center !important;
-    padding-right: 19px !important;
-  }
-
-  .accordion {
-  background-color: transparent !important;
-  color: #fff !important;
-  cursor: pointer;
-  margin: 39px 0 !important;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  margin-left: 15px;
-  display: none;
-  background-color: transparent !important;
-  overflow: hidden;
-  transition: 0.4s;
-}
-
-.panel p{
-  margin: 0;
-}
-
-.panel span{
-  padding: 0 10px;
-  font-size: 35px;
-  display: inline-block;
-}
-
-button.accordion::after {
-    content: '+';
-    font-size: 22px;
-    font-weight: bold;
-    position: absolute;
-    left: 5px;
-  /*  top: 7px; */
-}
-
- button.accordion.active::after {
-   content: '-';
-   font-size: 22px;
-   font-weight: bold;
-   position: absolute;
-    left: 5px;
-  /* top: 20px; */
-}
-
-.accordion-button{
-  border-bottom: 1px solid #fff;
-}
-
-button.accordion span{
-  padding: 0 10px;
-  font-size: 35px;
-  display: inline-block;
-  padding-bottom: 20px;
-}
-
-</style>
 </head>
 <body>
-  <header class="second-header">
-      <div class="header-img">
-          <img src="asset/img/luxe-logo-1.png" alt="">
+  <header class="second-header" id="main-nav">
+    <div class="header-img">
+         <img class="headerLogo" src="asset/img/luxe-logo-1.png" alt="">
+    </div>
+    <div class="main-navbar pt-0">
+      <div class="main-nav-content">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="index.html" class="navbar-brand d-none navbarLogo w-25">
+                <img src="asset/img/luxe-logo-1.png" class="w-100" alt="">
+            </a>
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav m-auto">
+                  <li class="nav-link"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-link"><a class="nav-link" href="about.html">About Luxe</a></li>
+                  <li class="nav-link"><a class="nav-link" href="join.html">Join Now</a></li>
+                  <li class="nav-link"><a class="nav-link" href="current.html">Current Live Draw</a></li>
+                  <li class="nav-link"><a class="nav-link" href="previous.html">previous Winners</a></li>
+                  <li class="nav-link"><a class="nav-link" href="faq.html">faq</a></li>
+                  <li class="nav-link"><a class="nav-link" href="contact.html">contact luxe</a></li>
+                  <li class="nav-link"><button class="nav-link" id="memberLoginButton">Member Login</button></li>
+              </ul>
+            </div>
+        </nav>
       </div>
-      <div class="main-navbar pt-0">
-          <div class="main-nav-content">
-              <nav>
-                  <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Luxe</a></li>
-                    <li><a href="">Join Now</a></li>
-                    <li><a href="">Current Live Draw</a></li>
-                    <li><a href="">previous Winners</a></li>
-                    <li><a href="">faq</a></li>
-                    <li><a href="">contact luxe</a></li>
-                    <li><button id="memberLoginButton">Member Login</button></li>
-                </ul>
-            </nav>
-        </div>
-      </div>
+    </div>
   </header>
   <section class="banner-section">
       <div class="banner-section-inner">
@@ -133,9 +66,9 @@ button.accordion span{
   <section class="priceDiv join-now">
       <div class="priceDiv-inner">
             <div class="container">
-                <div class="row pl-4">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="priceDiv-content firstDiv joinNowDiv  mt-5">
+                <div class="row priceDivRow pl-4">
+                    <div class="col-lg-6 col-md-12 col-sm-12 firstColumn">
+                        <div class="priceDiv-content firstDiv joinNowDiv  mt-5 faqDiv">
                           <h1>Frequently Asked Questions</h1>
                           <div class="button-div">
                               <div class="accordion-button">
@@ -194,7 +127,7 @@ button.accordion span{
                           </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 secondColumn">
                         <div class="priceDiv-content">
                            <div class="right-circle-div">
                                <img src="asset/img/circle.png" alt="">
@@ -225,16 +158,9 @@ button.accordion span{
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-md-12">
-                       <img src="" alt="">
-                    </div>
-                </div> -->
+
             </div>
-            <!-- <div class="joinNowDiv join-title">
-                <h3>If you love life,</h3>
-                <h3 style="margin-left: 100px;">join The Luxe Life</h3>
-            </div> -->
+
         </div>
   </section>
   <section class="priceGiveAway">
@@ -267,7 +193,7 @@ button.accordion span{
   <section class="modern-section">
       <div class="modern-section-inner">
           <div class="modern-section-content join-part p-0">
-              <h2 id="TheLuxLife" class="m-0">The Luxe Life</h2>
+              <h2 class="TheLuxLife" class="m-0">The Luxe Life</h2>
           </div>
       </div>
   </section>
@@ -329,6 +255,8 @@ button.accordion span{
     });
   }
   </script>
+
+  <script type="text/javascript" src="asset/js/main.js"></script>
 
 </body>
 </html>

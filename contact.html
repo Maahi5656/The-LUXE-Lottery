@@ -27,26 +27,34 @@
   <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
-  <header class="second-header">
-      <div class="header-img">
-          <img src="asset/img/luxe-logo-1.png" alt="">
+  <header class="second-header" id="main-nav">
+    <div class="header-img">
+         <img class="headerLogo" src="asset/img/luxe-logo-1.png" alt="">
+    </div>
+    <div class="main-navbar pt-0">
+      <div class="main-nav-content">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="index.html" class="navbar-brand d-none navbarLogo w-25">
+                <img src="asset/img/luxe-logo-1.png" class="w-100" alt="">
+            </a>
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav m-auto">
+                  <li class="nav-link"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-link"><a class="nav-link" href="about.html">About Luxe</a></li>
+                  <li class="nav-link"><a class="nav-link" href="join.html">Join Now</a></li>
+                  <li class="nav-link"><a class="nav-link" href="current.html">Current Live Draw</a></li>
+                  <li class="nav-link"><a class="nav-link" href="previous.html">previous Winners</a></li>
+                  <li class="nav-link"><a class="nav-link" href="faq.html">faq</a></li>
+                  <li class="nav-link"><a class="nav-link" href="contact.html">contact luxe</a></li>
+                  <li class="nav-link"><button class="nav-link" id="memberLoginButton">Member Login</button></li>
+              </ul>
+            </div>
+        </nav>
       </div>
-      <div class="main-navbar pt-0">
-          <div class="main-nav-content">
-              <nav>
-                  <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Luxe</a></li>
-                    <li><a href="">Join Now</a></li>
-                    <li><a href="">Current Live Draw</a></li>
-                    <li><a href="">previous Winners</a></li>
-                    <li><a href="">faq</a></li>
-                    <li><a href="">contact luxe</a></li>
-                    <li><button id="memberLoginButton">Member Login</button></li>
-                </ul>
-            </nav>
-        </div>
-      </div>
+    </div>
   </header>
   <section class="banner-section">
       <div class="banner-section-inner">
@@ -59,7 +67,7 @@
       <div class="prize-details-inner">
           <div class="prize-details-content">
                <div class="container prize-text">
-                   <div class="row pl-4">
+                   <div class="row priceDivRow pl-4">
                        <div class="col-md-4">
                            <div class="priceDiv-content firstDiv mt-0">
                                  <h1  class="mb-4">Contact Luxe</h1>
@@ -106,7 +114,7 @@
 
           </div>
           <div class="prize-details-content section-bottom-text">
-              <h2 id="TheLuxLife">The Luxe Life</h2>
+              <h2 class="TheLuxLife">The Luxe Life</h2>
           </div>
 
       </div>
@@ -153,5 +161,6 @@
       </div>
   </footer>
 
+  <script type="text/javascript" src="asset/js/main.js"></script>
 </body>
 </html>
